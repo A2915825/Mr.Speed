@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background{
+    background-image: url(sky.jpg);
+    
+    overflow-x: auto;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.highway{
+    background-image: url(road.jpg);
+    height: 200px;
+    width: 10000%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    animation: highway 10.8s linear infinite;
+}
+
+@keyframes highway{
+    100%{transform: translateX(-37000px);}
+}
+    
+.city{
+
+    background-image: url(city.png);
+    height: 200px;
+    width: 10000%;
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    animation: city 68s linear infinite;}
+
+    @keyframes city{
+        100%{
+            transform: translateX(-34000px); 
+        }
+    }
+
+    #movement{
+        position: absolute;
+        bottom: 80px;
+        animation: movv 80s linear infinite 2s;
+         left: 100px;
+    }
+
+    @keyframes movv{
+        50%{
+            transform: translateX(166%);
+        }
+        100%{transform: translateX(-100%);
+        }
+        
+    }
+
+   
+
+    #movement .car img{
+        width: 32%;
+        
+        bottom: 20px;
+    }
+
+    #movement .wheel-1{
+        position: absolute;
+        left: 22.2%;
+        bottom: 5%;
+        
+    }
+    #movement .wheel-1 img{
+        width: 25%;
+        animation: frontwheel 0.15s infinite linear ;
+      
+    }
+
+    @keyframes frontwheel{
+        100%{
+            transform: rotate(360deg);
+        }
+    } 
+
+    #movement .wheel-2{
+        left: 2.6%;
+        bottom: 6.8%;
+        position: absolute;
+    }
+
+    #movement .wheel-2 img{
+        width: 25%;
+        animation: rarewheel 0.15s infinite linear ; 
+       
+    }
+
+    @keyframes rarewheel{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+  
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    
+    
+    #movement-2{
+        position: absolute;
+        bottom: 10px;
+        left: 500px;
+    
+
+    
+    }
+
+    #movement-2 .car img{
+        width: 35%;
+        bottom: 20px;
+    }
+
+    #movement-2 .wheel-1{
+        position: absolute;
+        left: 24.2%;
+        bottom: 5%;
+        
+    }
+    #movement-2 .wheel-1 img{
+        width: 28%;
+        animation: frontwheel 0.5s infinite linear ;
+      
+    }
+
+    @keyframes frontwheel{
+        100%{
+            transform: rotate(360deg);
+        }
+    } 
+
+    #movement-2 .wheel-2{
+        left: 2.8%;
+        bottom: 6.8%;
+        position: absolute;
+    }
+
+    #movement-2 .wheel-2 img{
+        width: 28%;
+        animation: rarewheel 0.5s infinite linear ; 
+       
+    }
+
+    @keyframes rarewheel{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+  
